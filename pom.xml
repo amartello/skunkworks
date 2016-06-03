@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<parent>
+		<groupId>io.ctl.robot.ops</groupId>
+		<artifactId>robotops-api</artifactId>
+		<version>1.20.21-SNAPSHOT</version>
+	</parent>
+	<artifactId>skunkworks</artifactId>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<spring.boot>1.2.5.RELEASE</spring.boot>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring.boot}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.ctl.robot.ops</groupId>
+			<artifactId>robotops-orchestrate</artifactId>
+			<version>1.20.21-SNAPSHOT</version>
+		</dependency>
+
+		<!-- orchestrate -->
+		<dependency>
+			<groupId>io.orchestrate</groupId>
+			<artifactId>orchestrate-client</artifactId>
+			<version>0.13.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jcabi</groupId>
+			<artifactId>jcabi-dynamo</artifactId>
+			<version>0.21.2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.ctl.robot.ops</groupId>
+			<artifactId>robotops-lib</artifactId>
+			<version>1.20.21-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>1.11.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mortbay.jetty</groupId>
+			<artifactId>jetty-util</artifactId>
+			<version>6.1.25</version>
+		</dependency>
+
+	</dependencies>
+
+
+</project>
